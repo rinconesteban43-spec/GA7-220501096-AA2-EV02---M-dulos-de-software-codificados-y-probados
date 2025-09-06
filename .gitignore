@@ -1,0 +1,18 @@
+# Archivos de Maven
+/target/
+/pom.xml.tag
+/pom.xml.versionsBackup
+/pom.xml.releaseBackup
+/release.properties
+/dependency-reduced-pom.xml
+/buildNumber.properties
+.m2f/
+.gnupg/
+# Eclipse y NetBeans
+.settings/
+.idea/
+*.iws
+*.iml
+*.ipr
+nb-configuration.xml
+/nbproject/private/

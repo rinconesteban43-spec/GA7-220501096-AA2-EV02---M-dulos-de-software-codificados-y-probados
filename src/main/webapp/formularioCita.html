@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Cita - TallerXpert</title>
+</head>
+<body>
+    <h1>Registrar Nueva Cita</h1>
+
+    <form action="CitaServlet" method="post">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <label for="clienteIdUsuario">Seleccione Cliente:</label>
+        <select id="clienteIdUsuario" name="clienteIdUsuario" required>
+            <option value="">-- Seleccione --</option>
+            <option value="2">María Gómez (ID: 2)</option>
+            <option value="3">Carlos Ramirez (ID: 3)</option>
+            <option value="4">Luis Martinez (ID: 4)</option>
+            <option value="5">Juan Perez (ID: 5)</option>
+            <option value="6">Laura Gomez (ID: 6)</option>
+        </select><br><br>
+
+        <label for="descripcion">Descripción del problema:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Valores fijos por ahora -->
+        <input type="hidden" name="idServicio" value="1">
+        <input type="hidden" name="empleadoIdAdmin" value="1">
+
+        <button type="submit">Registrar Cita</button>
+    </form>
+</body>
+</html>
